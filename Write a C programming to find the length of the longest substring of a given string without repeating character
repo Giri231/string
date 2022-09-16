@@ -1,0 +1,32 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    getline(cin,s);
+    int n=s.length();
+    int i ,j;
+    int count=0;
+    int ans=0;
+    for( i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+        if(s[i]!=s[j])
+        {
+            count++;
+        }
+        else 
+        break;
+   if(ans<=count)
+         ans=count;
+       
+        }
+         
+         
+        
+    }
+    cout<<ans;
+}
